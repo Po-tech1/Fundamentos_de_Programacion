@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contador bb</title>
+<script src="./scripts/popup.js" defer></script>
+  <style>
+   body {
+  font-family: sans-serif;
+  position: relative;
+  padding: 100px;
+  height: 100px;
+  background-image: url("Imagenes/BIMG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+}
+.flash {
+  animation: pop 0.3s ease-in-out;
+  color: darkslategrey;
+}
+  @keyframes pop {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+#Titulo {
+  position: absolute;
+  top: 0px;
+  left: 35px;
+  font-size: 28px;
+}
+/* Estilos separados para cada H2 */
+#Hileras {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  font-size: 22px;
+}
+
+#Puntadas {
+  position: absolute;
+  top: 130px;
+  left: 10px;
+  font-size: 22px;
+}
+
+/* Contador principal */
+#contador {
+  position: absolute;
+  top: 100px;
+  left: 85px;
+  font-size: 30px;
+}
+
+/* Contador secundario */
+#contador2 {
+  position: absolute;
+  top: 190px;
+  left: 85px;
+  font-size: 30px;
+}
+#sumar{
+  position: absolute;
+  top: 100px;
+  left: 35px;
+  font-size: 28px;
+}
+#sumar2{
+  position: absolute;
+  top: 190px;
+  left: 35px;
+  font-size: 28px;
+}
+#restar{
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  font-size: 28px;
+}
+#restar2{
+  position: absolute;
+  top: 190px;
+  left: 120px;
+  font-size: 28px;
+}
+#reiniciar {
+  position: absolute;
+  top: 250px;
+  left: 55px;
+  font-size: 20px;
+}
+  </style>
+</head>
+<body>
+  <h1 id= "Titulo">Contador:</h1>
+
+  <h2 id="Hileras">Hileras:</h2>
+  <div id="contador">0</div>
+  <button id="sumar">+</button>
+  <button id="restar">-</button>
+
+  <h2 id="Puntadas">Puntadas:</h2>
+  <div id="contador2">0</div>
+  <button id="sumar2">+</button>
+  <button id="restar2">-</button>
+
+  <button id="reiniciar">reiniciar</button>
+</body>
+</html>
