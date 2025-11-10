@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Contador Crochet",
+  "description": "Un contador de rows para Edge",
+  "version": "1.1.0",
+  "author": "Aixa",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "imagenes/icon.png",
+      "32": "imagenes/icon.png",
+      "48": "imagenes/icon.png",
+      "128": "imagenes/icon.png"
+    }
+  },
+  "icons": {
+    "16": "imagenes/icon.png",
+    "32": "imagenes/icon.png",
+    "48": "imagenes/icon.png",
+    "128": "imagenes/icon.png"
+  },
+  "permissions": ["storage"]
+}
+
